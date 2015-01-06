@@ -13,6 +13,8 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.0.0'
 
-  s.add_dependency 'truty'
+  s.add_dependency 'truty', '~> 0.3'
+  s.add_dependency 'kramdown', '~> 1.5'
+  s.add_dependency 'jekyll', '~> 2.5'
 
 end
