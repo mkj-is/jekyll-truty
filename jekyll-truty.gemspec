@@ -17,4 +17,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'kramdown', '~> 1.5'
   s.add_dependency 'jekyll', '~> 2.5'
 
+  s.add_development_dependency 'rubygems-tasks', '~> 0.2'
+
 end
