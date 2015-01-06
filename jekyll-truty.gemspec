@@ -3,7 +3,7 @@ Gem::Specification.new do |s|
   s.name        = 'jekyll-truty'
   s.version     = '0.1.1'
   s.platform    = Gem::Platform::RUBY
-  s.summary     = "True typography converter for Jekyll"
+  s.summary     = "True typography converter for Jekyll and Kramdown"
   s.description = "Kramdown extension for Jekyll, which improves plain text typography."
   s.authors     = ["Matěj Kašpar Jirásek"]
   s.email       = 'matej.jirasek@me.com'
