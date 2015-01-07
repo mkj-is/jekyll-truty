@@ -11,7 +11,7 @@ True typography converter for Jekyll. Markdown files will be converted with vari
 
 For more information about this plugin visit the [Truty project page](https://github.com/mkj-is/Truty).
 
-## Configuration
+## Configuration
 
 Add this to your `_config.yml` file.
 
@@ -24,6 +24,6 @@ kramdown:
 
 Language can be one of `czech`, `english` or `french`.
 
-## Authors
+## Authors
 
 - [Matěj Kašpar Jirásek](https://github.com/mkj-is) (http://mkj.is)
