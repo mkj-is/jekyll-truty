@@ -23,8 +23,28 @@ EOF
         raise FatalException.new("Missing dependency: Truty")
       end
 
+      begin
+        require 'nokogiri'
+      rescue LoadError
+        STDERR.puts 'You are missing a library required for HTML parsing. Please run:'
+        STDERR.puts '  $ [sudo] gem install nokogiri'
+        raise FatalException.new("Missing dependency: Nokogiri")
+      end
+
       def convert_text(el, indent)
-        Truty.convert(el.value, :html, @options[:truty_lang])
+        node = Nokogiri::HTML.fragment(el.value)
+        traverse_html(node, @options[:truty_lang])
+        node.to_html(:indent => 0)
+      end
+
+      def traverse_html(node, lang = :english)
+        node.children.each do |child|
+          if child.text? && child.text.strip.length > 0 then
+            child.content = Truty.convert(child.inner_text, lang)
+          else
+            traverse_html(child)
+          end
+        end
       end
     end
   end
