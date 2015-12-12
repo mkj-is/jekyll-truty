@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.0.0'
 
   s.add_dependency 'truty', '~> 0.4'
-  s.add_dependency 'kramdown', '~> 1.5'
-  s.add_dependency 'jekyll', '~> 2.5'
+  s.add_dependency 'kramdown', '~> 1.9'
+  s.add_dependency 'jekyll', '~> 3.0'
   s.add_dependency 'nokogiri', '~> 1.6'
 
   s.add_development_dependency 'rubygems-tasks', '~> 0.2'
